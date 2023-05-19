@@ -1,0 +1,28 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class a{
+	int area(int a, int b){
+		System.out.println("The area of given rectangle is "+a*b);
+		return 0;
+	}
+}
+class b extends a{
+	int area(int a){
+		System.out.println("The area of given square is "+a*a);
+		return 0;
+	}
+}
+class c extends b{
+	public static void main(String[]args){
+		Scanner sc = new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		a obj=new a();
+		b obj1=new b();
+		obj1.area(a);
+		obj.area(a,b);
+	}
+}
