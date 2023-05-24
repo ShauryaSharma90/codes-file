@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	int a,*b;
+	cout << "Enter The Number\n";
+	cin >> a;
+	b=&a;
+	int f=1;
+	for(int i=*b;i>0;i--){
+		f=f*i;
+	}
+	cout << "The Factorial of The Given Number : " << f << "\n";
+	return 0;
+}
