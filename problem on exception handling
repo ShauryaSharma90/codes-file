@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.*;
+ class a{
+	public static void main(String[]args){
+		Scanner sc =new Scanner(System.in);
+		double a=sc.nextDouble();
+		double b=sc.nextDouble();
+		try{
+			div(a,b);
+		}
+		catch(Exception e){
+			System.out.println(e.getMessage);
+		}
+	}
+	static void div(double a,double b){
+		System.out.println(a/b);
+		
+	}
+}
