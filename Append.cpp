@@ -14,8 +14,8 @@ string pattern_3(string& n){
 }
 // Appending substrings:
 string pattern_2(string& n , string& t){
-    n.append(t,0,12); // Add " is handsome" from temp string
-    return n;
+    n.append(t,0,12); // Add " is handsome" from temp string 
+    return n;         //Note- the 12 in n.append(t,0,12) statement represent the no. of elements you want 
 }
 // Appending strings:
 string pattern_1(string& n, string& sn){
@@ -25,9 +25,9 @@ string pattern_1(string& n, string& sn){
 int main(){
     string name = "Shaurya";
     string SurName = "Sharma";
-    string temp  =" is handsome ";
+    string temp  ="is handsome";
     // cout << pattern_1(name,SurName) << "\n";
-    // cout << pattern_2(name,temp) << "\n";
+    cout << pattern_2(name,temp) << "\n";
     // cout << pattern_3(name) << "\n";
     // cout << pattern_4(name , temp) << "\n";
     return 0;
